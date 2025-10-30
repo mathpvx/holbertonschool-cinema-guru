@@ -1,0 +1,115 @@
+.auth-wrap {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  background: #111;
+  padding: 2rem;
+}
+
+.auth-card {
+  width: 540px;
+  background: #fff;
+  color: #1c1c1c;
+  border: 4px solid #222;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.auth-tabs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: #b70f15;
+}
+
+.auth-tab {
+  appearance: none;
+  border: none;
+  padding: 0.9rem 1rem;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+  background: #d91a22;
+}
+
+.auth-tab:nth-child(2) {
+  background: #b70f15;
+}
+
+.auth-tab.active {
+  background: #e11c24;
+}
+
+.auth-body {
+  padding: 2.25rem 2rem 2rem;
+}
+
+.auth-title {
+  margin: 0 0 1.5rem 0;
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-align: center;
+  color: #232323;
+}
+
+.auth-form {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.auth-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0.5rem;
+}
+
+.auth-btn {
+  background: #d91a22;
+  color: #fff;
+  border: 1px solid #880b10;
+  padding: 0.75rem 1.25rem;
+  border-radius: 4px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.auth-btn:hover {
+  background: #b70f15;
+}
+
+/* integrate with general inputs */
+.cg-field .cg-label {
+  color: #a66;
+  font-weight: 600;
+}
+
+.cg-label-icon {
+  color: #f2c7cb;
+}
+
+.cg-input {
+  border-color: #e11c24;
+  background: #fff;
+  color: #1c1c1c;
+}
+
+.cg-input:focus {
+  box-shadow: 0 0 0 3px rgba(225,28,36,.2);
+  background: #fff;
+}
+
+/* password field with toggle */
+.pw-wrap {
+  position: relative;
+}
+
+.pw-toggle {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-14px);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #888;
+  padding: 4px;
+}
