@@ -1,0 +1,12 @@
+.dashboard-wrap {
+  min-height: 100vh;
+  background: #0f0f0f;
+}
+
+.dashboard-surface {
+  margin: 12px;
+  border: 1px solid #1e1e1e;
+  border-radius: 4px;
+  background: radial-gradient(1200px 500px at -10% -20%, #1d1d1d 0%, #141414 50%, #0f0f0f 100%);
+  min-height: calc(100vh - 72px);
+}

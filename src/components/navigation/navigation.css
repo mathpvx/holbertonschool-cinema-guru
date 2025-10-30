@@ -1,0 +1,50 @@
+.nav-bar {
+  height: 48px;
+  background: #141414;
+  color: #eee;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 14px;
+  border-bottom: 1px solid #222;
+}
+
+.nav-brand {
+  font-size: 14px;
+  font-weight: 700;
+  opacity: .9;
+}
+
+.nav-spacer {
+  flex: 1;
+}
+
+.nav-user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  object-fit: cover;
+  border: 2px solid #b01217;
+}
+
+.nav-welcome {
+  font-size: 12px;
+  color: #d6d6d6;
+}
+
+.nav-logout {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #e01b24;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+  padding-left: 12px;
+}
