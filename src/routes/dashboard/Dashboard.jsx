@@ -2,17 +2,9 @@ import './dashboard.css'
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import Header from '../../components/navigation/Header.jsx'
 import SideBar from '../../components/navigation/SideBar.jsx'
-
-// Temporary placeholders — these will be replaced later
-function HomePage() {
-  return <div>Home Page</div>
-}
-function Favorites() {
-  return <div>Favorites Page</div>
-}
-function WatchLater() {
-  return <div>Watch Later Page</div>
-}
+import HomePage from './HomePage.jsx'
+import Favorites from './Favorites.jsx'
+import WatchLater from './WatchLater.jsx'
 
 export default function Dashboard({ userUsername, setIsLoggedIn }) {
   return (
