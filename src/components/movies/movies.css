@@ -1,0 +1,129 @@
+.movies-filter {
+  display: grid;
+  gap: 12px;
+  padding: 12px;
+  background: #151515;
+  border: 1px solid #222;
+  border-radius: 8px;
+  color: #eee;
+}
+
+.movies-filter-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.movies-filter-inline {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+  padding: 0;
+  margin: 4px 0 0 0;
+}
+
+.tag-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  cursor: pointer;
+  background: #1b1b1b;
+  color: #d9d9d9;
+  border: 1px solid #2a2a2a;
+  user-select: none;
+  font-size: 13px;
+}
+
+.tag-item.filter {
+  border-radius: 8px;
+}
+
+.tag-item.selected {
+  background: #e01b24;
+  border-color: #e01b24;
+  color: #fff;
+}
+
+.movie-list {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0 0 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 14px;
+}
+
+.movie-card {
+  display: grid;
+  gap: 10px;
+  padding: 12px;
+  background: #171717;
+  border: 1px solid #252525;
+  border-radius: 10px;
+  color: #e9e9e9;
+  min-height: 180px;
+}
+
+.movie-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.movie-title {
+  font-weight: 700;
+  font-size: 16px;
+  margin: 0;
+}
+
+.movie-actions {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.movie-action {
+  cursor: pointer;
+  color: #cfcfcf;
+}
+
+.movie-action.active.favorite {
+  color: #ff5273;
+}
+
+.movie-action.active.watchlater {
+  color: #f1c40f;
+}
+
+.movie-synopsis {
+  color: #c9c9c9;
+  font-size: 13px;
+  line-height: 1.35;
+  margin: 0;
+  min-height: 48px;
+}
+
+.movie-genres {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.movie-genre {
+  font-size: 12px;
+  color: #bdbdbd;
+  background: #1f1f1f;
+  border: 1px solid #2a2a2a;
+  padding: 4px 8px;
+  border-radius: 999px;
+}
